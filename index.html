@@ -616,7 +616,7 @@
   <!-- ── FOOTER ── -->
   <footer>
     <div class="container">
-      <span>MaidOwn — scheduling and invoicing for maid service businesses. Built in Lynchburg, VA.</span>
+      <span>MaidOwn — scheduling and invoicing for maid service businesses.</span>
       <span>Questions? <a href="mailto:hello@maidown.com">hello@maidown.com</a></span>
       <span>© 2026 MaidOwn</span>
     </div>
@@ -632,6 +632,19 @@
       fnames[2]='LNAME'; ftypes[2]='text';
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
+  </script>
+  <script type="text/javascript">
+    // Replace Mailchimp's default success message with custom copy
+    document.addEventListener('DOMContentLoaded', function() {
+      var successDiv = document.getElementById('mce-success-response');
+      if (!successDiv) return;
+      var observer = new MutationObserver(function() {
+        if (successDiv.style.display !== 'none' && successDiv.innerHTML.trim() !== '') {
+          successDiv.innerHTML = 'Thank you! You\'ve been added to the MaidOwn waitlist. We\'ll reach out when we launch with your 30% discount code.';
+        }
+      });
+      observer.observe(successDiv, { attributes: true, attributeFilter: ['style'], childList: true });
+    });
   </script>
 
 </body>
