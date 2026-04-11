@@ -635,15 +635,18 @@
   </script>
   <script type="text/javascript">
     // Replace Mailchimp's default success message with custom copy
+    var customMsg = "Thank you! You\u2019ve been added to the MaidOwn waitlist. We\u2019ll reach out when we launch with your 30% discount code.";
     document.addEventListener('DOMContentLoaded', function() {
       var successDiv = document.getElementById('mce-success-response');
       if (!successDiv) return;
       var observer = new MutationObserver(function() {
-        if (successDiv.style.display !== 'none' && successDiv.innerHTML.trim() !== '') {
-          successDiv.innerHTML = 'Thank you! You\'ve been added to the MaidOwn waitlist. We\'ll reach out when we launch with your 30% discount code.';
+        var text = successDiv.innerHTML.trim();
+        if (text !== '' && text !== customMsg) {
+          successDiv.innerHTML = customMsg;
         }
       });
-      observer.observe(successDiv, { attributes: true, attributeFilter: ['style'], childList: true });
+      // Watch both text content changes (childList) and style toggling (attributes)
+      observer.observe(successDiv, { attributes: true, childList: true, subtree: true });
     });
   </script>
 
