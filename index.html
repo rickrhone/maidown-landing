@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MaidOwn — Scheduling Software You Buy Once and Own Forever</title>
   <meta name="description" content="Schedule jobs, invoice clients, and send automated reminders. No monthly fees. No subscriptions. Ever. Join the waitlist for 30% off at launch." />
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    /* Mailchimp base width override — our .mc-form-wrap constrains the width */
+    #mc_embed_signup { background: transparent; clear: left; font: 14px Helvetica, Arial, sans-serif; width: 100%; }
+  </style>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -378,6 +383,13 @@
     footer a { color: var(--color-muted); text-decoration: none; }
     footer a:hover { color: var(--color-text); }
 
+    /* Screen-reader only label (hides "Email Address" label visually) */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       section { padding: 3.5rem 0; }
@@ -572,10 +584,29 @@
       <p class="subheadline">Join the waitlist and get 30% off when MaidOwn launches.</p>
 
       <div class="mc-form-wrap">
-        <!-- MAILCHIMP_FORM_PLACEHOLDER -->
-        <!-- Paste your Mailchimp embedded form code here.
-             Get it from: Audience → Signup forms → Embedded forms → Condensed style.
-             The CSS overrides above will style it to match the page automatically. -->
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us13.list-manage.com/subscribe/post?u=e40f327819da616c7260c4964&amp;id=d2e644f611&amp;f_id=00fe00e9f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <label for="mce-EMAIL" class="sr-only">Email Address</label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="Your email address" value="">
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+              <!-- Bot protection — do not remove -->
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_e40f327819da616c7260c4964_d2e644f611" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Join the waitlist →">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
 
       <p class="cta-fine-print">No spam. No pressure. Just a one-time email when we launch.</p>
@@ -590,6 +621,18 @@
       <span>© 2026 MaidOwn</span>
     </div>
   </footer>
+
+  <!-- Mailchimp validation scripts -->
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array(); window.ftypes = new Array();
+      fnames[0]='EMAIL'; ftypes[0]='email';
+      fnames[1]='FNAME'; ftypes[1]='text';
+      fnames[2]='LNAME'; ftypes[2]='text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
 
 </body>
 </html>
