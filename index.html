@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MaidOwn — Scheduling Software You Buy Once and Own Forever</title>
-  <meta name="description" content="Schedule jobs, invoice clients, and send automated reminders. No monthly fees. No subscriptions. Ever. Join the waitlist for 30% off at launch." />
+  <meta name="description" content="Schedule jobs, invoice clients, and send automated reminders. One-time pricing from $197. No monthly fees. No subscriptions. Ever. Join the waitlist for 30% off at launch." />
   <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
     /* Mailchimp base width override — our .mc-form-wrap constrains the width */
@@ -282,7 +282,10 @@
       letter-spacing: 0.08em;
       padding: 0.2rem 0.75rem;
       border-radius: 999px;
-      white-space: nowrap;
+      white-space: normal;
+      text-align: center;
+      width: max-content;
+      max-width: 90%;
     }
     .pricing-card h3 {
       font-size: 1rem;
@@ -397,6 +400,7 @@
       .btn-lg { width: 100%; text-align: center; }
       .steps { flex-direction: column; }
       footer .container { flex-direction: column; align-items: flex-start; }
+      th, td { padding: 0.6rem 0.5rem; font-size: 0.875rem; }
     }
   </style>
 </head>
@@ -437,24 +441,24 @@
             <tr>
               <th>Software</th>
               <th>Monthly</th>
-              <th>Cost this year</th>
+              <th>Per Year</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>ZenMaid</td>
-              <td>$58 / month</td>
-              <td>$696 this year alone</td>
+              <td>$58 / mo</td>
+              <td>$696 / yr</td>
             </tr>
             <tr>
               <td>Jobber</td>
-              <td>$49 / month</td>
-              <td>$588 this year alone</td>
+              <td>$49 / mo</td>
+              <td>$588 / yr</td>
             </tr>
             <tr>
               <td>Housecall Pro</td>
-              <td>$69 / month</td>
-              <td>$828 this year alone</td>
+              <td>$69 / mo</td>
+              <td>$828 / yr</td>
             </tr>
             <tr class="highlight">
               <td>MaidOwn</td>
@@ -467,6 +471,7 @@
       <div class="math-callout">
         <p>MaidOwn pays for itself vs. ZenMaid in 6 months. After that, every year costs you nothing.</p>
       </div>
+      <p style="margin-top:1rem; font-size:0.875rem; color:var(--color-muted);">Personal license available at $197 for solo cleaners. Business Pro at $397 includes the full Pro Pack.</p>
     </div>
   </section>
 
@@ -554,30 +559,57 @@
       <h2>Transparent, one-time pricing.</h2>
       <div class="pricing-grid">
         <div class="pricing-card">
-          <h3>Solo</h3>
+          <h3>Personal</h3>
           <div class="pricing-price">$197</div>
           <div class="pricing-once">one-time purchase</div>
-          <p class="pricing-detail">1 owner + 1 cleaner</p>
+          <p class="pricing-detail">Owner + 1 cleaner</p>
         </div>
         <div class="pricing-card popular">
-          <div class="popular-badge">Most Popular</div>
-          <h3>Team</h3>
+          <div class="popular-badge">Recommended for most cleaning businesses</div>
+          <h3>Business</h3>
           <div class="pricing-price">$347</div>
           <div class="pricing-once">one-time purchase</div>
-          <p class="pricing-detail">1 owner + up to 5 cleaners</p>
+          <p class="pricing-detail">Unlimited cleaners</p>
         </div>
         <div class="pricing-card">
-          <h3>Business</h3>
-          <div class="pricing-price">$547</div>
+          <h3>Business Pro</h3>
+          <div class="pricing-price">$397</div>
           <div class="pricing-once">one-time purchase</div>
-          <p class="pricing-detail">1 owner + up to 15 cleaners</p>
+          <p class="pricing-detail">Unlimited cleaners + Pro Pack included</p>
         </div>
       </div>
+      <p style="margin-top:2rem; font-size:0.9375rem; color:var(--color-muted); line-height:1.7;">Not sure which tier? Most established cleaning businesses choose Business. It covers everything you need to run scheduling, invoicing, and reminders for any number of cleaners — no per-seat charges. Choose Business Pro if you operate in multiple cities, want to send invoices under your own brand, or need detailed reporting on cleaner and client performance.<br><br>You can upgrade at any time and only pay the difference. You'll never lose your data or have to reinstall.</p>
       <p class="pricing-note">Launching soon. Join the waitlist for 30% off your first license.</p>
     </div>
   </section>
 
-  <!-- ── SECTION 7: CTA REPEAT ── -->
+  <!-- ── SECTION 7: PRO PACK ── -->
+  <section id="pro-pack">
+    <div class="container">
+      <div class="section-label">The Pro Pack</div>
+      <h2>Built for growing cleaning businesses.</h2>
+      <p class="lead">Included free in Business Pro. Available as a $99 add-on for Personal and Business tiers.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🏷️</span>
+          <h3>White-label everything</h3>
+          <p>Your logo on invoices. Your business name in client emails. MaidOwn disappears from your customer experience.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📊</span>
+          <h3>Reports that actually help you run the business</h3>
+          <p>See which clients are most profitable. See which cleaners are most efficient. Track your business trends month over month.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📍</span>
+          <h3>Multi-location support</h3>
+          <p>Run cleaning crews in multiple cities? Tag jobs, clients, and cleaners by location, and filter your calendar and reports accordingly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 8: CTA REPEAT ── -->
   <section id="cta">
     <div class="container">
       <h2>Ready to stop renting your software?</h2>
