@@ -5,128 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MaidOwn — Scheduling Software You Buy Once and Own Forever</title>
   <meta name="description" content="Schedule jobs, invoice clients, and send automated reminders. One-time pricing from $197. No monthly fees. No subscriptions. Ever. Join the waitlist for 30% off at launch." />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Shared brand tokens + base styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Mailchimp base -->
   <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
-    /* Mailchimp base width override — our .mc-form-wrap constrains the width */
     #mc_embed_signup { background: transparent; clear: left; font: 14px Helvetica, Arial, sans-serif; width: 100%; }
   </style>
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --color-bg: #FFFFFF;
-      --color-text: #1A1A2E;
-      --color-accent: #2563EB;
-      --color-accent-hover: #1D4ED8;
-      --color-muted: #6B7280;
-      --color-border: #E5E7EB;
-      --color-section-alt: #F9FAFB;
-      --color-highlight-bg: #F0FDF4;
-      --color-highlight-border: #16A34A;
-      --color-highlight-text: #15803D;
-      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --radius: 8px;
-      --max-w: 860px;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font-sans);
-      background: var(--color-bg);
-      color: var(--color-text);
-      line-height: 1.6;
-      font-size: 16px;
-    }
-
-    .container {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* ── NAV ── */
-    nav {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--color-border);
-    }
-    nav .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--color-text);
-      text-decoration: none;
-      letter-spacing: -0.02em;
-    }
-    .nav-cta {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--color-accent);
-      text-decoration: none;
-    }
-    .nav-cta:hover { text-decoration: underline; }
-
-    /* ── BUTTONS ── */
-    .btn {
-      display: inline-block;
-      padding: 0.875rem 2rem;
-      border-radius: var(--radius);
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      transition: background 0.15s ease;
-    }
-    .btn-primary {
-      background: var(--color-accent);
-      color: #fff;
-    }
-    .btn-primary:hover { background: var(--color-accent-hover); }
-    .btn-lg { font-size: 1.125rem; padding: 1rem 2.5rem; }
-
-    /* ── SECTIONS ── */
-    section { padding: 5rem 0; }
-    section.alt { background: var(--color-section-alt); }
-
-    .section-label {
-      font-size: 0.8125rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--color-accent);
-      margin-bottom: 0.75rem;
-    }
-    h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.25rem;
-    }
-    h2 {
-      font-size: clamp(1.5rem, 3.5vw, 2.125rem);
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.25rem;
-    }
-    h3 {
-      font-size: 1.125rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    p { color: var(--color-muted); margin-bottom: 1rem; }
-    p:last-child { margin-bottom: 0; }
-    p.lead {
-      font-size: 1.125rem;
-      line-height: 1.7;
-    }
-
     /* ── HERO ── */
     #hero {
       padding: 6rem 0 5rem;
@@ -134,87 +34,100 @@
     }
     #hero h1 { max-width: 720px; margin: 0 auto 1.25rem; }
     #hero .subheadline {
-      font-size: 1.125rem;
-      color: var(--color-muted);
+      font-size: 1.0625rem;
+      color: var(--neutral-text-secondary);
       max-width: 520px;
       margin: 0 auto 2.5rem;
       line-height: 1.7;
     }
-    .hero-cta-stack { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+    .hero-cta-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
     .hero-fine-print {
       font-size: 0.8125rem;
-      color: var(--color-muted);
+      color: var(--neutral-text-secondary);
     }
 
     /* ── MATH TABLE ── */
-    .math-table-wrap { overflow-x: auto; margin: 2rem 0; }
+    .math-table-wrap {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border: 0.5px solid var(--neutral-border);
+      border-radius: var(--radius-lg);
+      background: var(--neutral-surface);
+    }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 1rem;
+      font-size: 0.9375rem;
     }
     th {
       text-align: left;
-      padding: 0.75rem 1rem;
-      font-size: 0.75rem;
-      font-weight: 700;
+      padding: 0.75rem 1.25rem;
+      font-size: 11px;
+      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--color-muted);
-      border-bottom: 2px solid var(--color-border);
+      letter-spacing: 1px;
+      color: var(--neutral-text-secondary);
+      border-bottom: 0.5px solid var(--neutral-border);
+      font-family: var(--font-body);
     }
     td {
-      padding: 1rem;
-      border-bottom: 1px solid var(--color-border);
-      color: var(--color-text);
+      padding: 1rem 1.25rem;
+      border-bottom: 0.5px solid var(--neutral-border-soft);
+      color: var(--neutral-text-primary);
     }
+    tr:last-child td { border-bottom: none; }
     tr.highlight td {
-      background: var(--color-highlight-bg);
-      font-weight: 700;
-      color: var(--color-highlight-text);
+      background: var(--mint-50);
+      font-weight: 500;
+      color: var(--mint-800);
     }
     tr.highlight td:first-child {
-      border-left: 3px solid var(--color-highlight-border);
+      border-left: 3px solid var(--mint-600);
     }
     .math-callout {
       margin-top: 1.5rem;
       padding: 1.25rem 1.5rem;
-      background: var(--color-highlight-bg);
-      border-left: 4px solid var(--color-highlight-border);
-      border-radius: 0 var(--radius) var(--radius) 0;
+      background: var(--mint-50);
+      border-left: 3px solid var(--mint-600);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
     .math-callout p {
-      color: var(--color-highlight-text);
-      font-weight: 600;
-      font-size: 1.0625rem;
+      color: var(--mint-800);
+      font-weight: 500;
+      font-size: 1rem;
       margin: 0;
     }
 
-    /* ── FEATURES ── */
+    /* ── FEATURES GRID ── */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
       margin-top: 3rem;
     }
     .feature-card {
       padding: 1.75rem;
-      background: #fff;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
+      background: var(--neutral-surface);
+      border: 0.5px solid var(--neutral-border);
+      border-radius: var(--radius-lg);
     }
     .feature-icon {
-      font-size: 2rem;
+      font-size: 1.75rem;
       margin-bottom: 1rem;
       display: block;
     }
-    .feature-card h3 { color: var(--color-text); }
+    .feature-card h3 { color: var(--neutral-text-primary); }
     .feature-card p { font-size: 0.9375rem; }
 
-    /* ── ACCESS ── */
+    /* ── HOW IT WORKS ── */
     #access .lead { max-width: 620px; }
 
-    /* ── INSTALLATION STEPS ── */
+    /* ── SETUP STEPS ── */
     .steps {
       display: flex;
       gap: 2rem;
@@ -229,29 +142,30 @@
       align-items: flex-start;
     }
     .step-number {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.25rem;
+      height: 2.25rem;
       border-radius: 50%;
-      background: var(--color-accent);
+      background: var(--mint-600);
       color: #fff;
-      font-weight: 800;
-      font-size: 1rem;
+      font-weight: 600;
+      font-size: 0.875rem;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 1rem;
       flex-shrink: 0;
+      font-family: var(--font-heading);
     }
     .step h3 { font-size: 1rem; }
     .step p { font-size: 0.875rem; }
     .install-fine-print {
       margin-top: 2.5rem;
       font-size: 0.875rem;
-      color: var(--color-muted);
+      color: var(--neutral-text-secondary);
     }
     .install-fine-print span { display: block; }
 
-    /* ── PRICING TABLE ── */
+    /* ── PRICING PREVIEW ── */
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -259,69 +173,68 @@
       margin-top: 3rem;
     }
     .pricing-card {
-      padding: 2rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
-      background: #fff;
+      padding: 1.75rem;
+      border: 0.5px solid var(--neutral-border);
+      border-radius: var(--radius-lg);
+      background: var(--neutral-surface);
       position: relative;
     }
     .pricing-card.popular {
-      border-color: var(--color-accent);
-      border-width: 2px;
+      border-color: var(--mint-600);
+      border-width: 1px;
     }
     .popular-badge {
       position: absolute;
-      top: -0.75rem;
+      top: -0.875rem;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--color-accent);
-      color: #fff;
-      font-size: 0.6875rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 0.2rem 0.75rem;
+      background: var(--mint-50);
+      color: var(--mint-800);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 10px;
       border-radius: 999px;
       white-space: normal;
       text-align: center;
       width: max-content;
-      max-width: 90%;
+      max-width: 88%;
     }
     .pricing-card h3 {
-      font-size: 1rem;
-      color: var(--color-muted);
-      font-weight: 600;
+      font-size: 0.9375rem;
+      color: var(--neutral-text-secondary);
+      font-weight: 500;
       margin-bottom: 0.5rem;
+      letter-spacing: 0;
     }
     .pricing-price {
       font-size: 2.25rem;
-      font-weight: 800;
-      color: var(--color-text);
-      letter-spacing: -0.03em;
+      font-weight: 600;
+      color: var(--neutral-text-primary);
+      letter-spacing: -0.8px;
       line-height: 1;
       margin-bottom: 0.25rem;
+      font-family: var(--font-heading);
+      font-variant-numeric: tabular-nums;
     }
     .pricing-once {
       font-size: 0.8125rem;
-      color: var(--color-muted);
+      color: var(--neutral-text-secondary);
       margin-bottom: 1rem;
     }
     .pricing-detail {
       font-size: 0.9375rem;
-      color: var(--color-muted);
+      color: var(--neutral-text-secondary);
       margin: 0;
     }
     .pricing-note {
       margin-top: 2.5rem;
       text-align: center;
       font-size: 0.9375rem;
-      color: var(--color-muted);
+      color: var(--neutral-text-secondary);
     }
 
     /* ── CTA SECTION ── */
-    #cta {
-      text-align: center;
-    }
+    #cta { text-align: center; }
     #cta h2 { max-width: 560px; margin: 0 auto 1rem; }
     #cta .subheadline {
       max-width: 420px;
@@ -329,78 +242,45 @@
       font-size: 1.0625rem;
     }
 
-    /* ── MAILCHIMP FORM STYLING ── */
-    .mc-form-wrap {
-      max-width: 480px;
-      margin: 0 auto;
-    }
-    /* Mailchimp embed overrides — applied after embed code is inserted */
-    .mc-form-wrap #mc_embed_signup {
-      background: transparent !important;
-      font-family: var(--font-sans) !important;
-    }
+    /* ── MAILCHIMP OVERRIDES ── */
+    .mc-form-wrap { max-width: 480px; margin: 0 auto; }
+    .mc-form-wrap #mc_embed_signup { background: transparent !important; font-family: var(--font-body) !important; }
     .mc-form-wrap #mc_embed_signup form { padding: 0 !important; }
     .mc-form-wrap #mc_embed_signup .mc-field-group { width: 100% !important; padding: 0 !important; }
     .mc-form-wrap #mc_embed_signup input.email {
       width: 100% !important;
       padding: 0.875rem 1rem !important;
-      border: 1px solid var(--color-border) !important;
-      border-radius: var(--radius) !important;
-      font-size: 1rem !important;
+      border: 0.5px solid var(--neutral-border-strong) !important;
+      border-radius: var(--radius-md) !important;
+      font-size: 0.9375rem !important;
       margin-bottom: 0.75rem !important;
-      font-family: var(--font-sans) !important;
+      font-family: var(--font-body) !important;
+      background: var(--neutral-surface) !important;
+      color: var(--neutral-text-primary) !important;
     }
     .mc-form-wrap #mc_embed_signup .button {
       width: 100% !important;
       padding: 0.875rem 2rem !important;
-      background: var(--color-accent) !important;
-      border-radius: var(--radius) !important;
-      font-size: 1rem !important;
-      font-weight: 700 !important;
-      font-family: var(--font-sans) !important;
+      background: var(--mint-600) !important;
+      border-radius: var(--radius-md) !important;
+      font-size: 0.9375rem !important;
+      font-weight: 500 !important;
+      font-family: var(--font-body) !important;
       height: auto !important;
     }
-    .mc-form-wrap #mc_embed_signup .button:hover {
-      background: var(--color-accent-hover) !important;
-    }
+    .mc-form-wrap #mc_embed_signup .button:hover { background: var(--mint-800) !important; }
     .cta-fine-print {
       margin-top: 0.75rem;
       font-size: 0.8125rem;
-      color: var(--color-muted);
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      border-top: 1px solid var(--color-border);
-      padding: 2.5rem 0;
-      font-size: 0.875rem;
-      color: var(--color-muted);
-    }
-    footer .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 2rem;
-      align-items: center;
-      justify-content: space-between;
-    }
-    footer a { color: var(--color-muted); text-decoration: none; }
-    footer a:hover { color: var(--color-text); }
-
-    /* Screen-reader only label (hides "Email Address" label visually) */
-    .sr-only {
-      position: absolute; width: 1px; height: 1px;
-      padding: 0; margin: -1px; overflow: hidden;
-      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+      color: var(--neutral-text-secondary);
     }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
-      section { padding: 3.5rem 0; }
       #hero { padding: 4rem 0 3.5rem; }
       .btn-lg { width: 100%; text-align: center; }
       .steps { flex-direction: column; }
-      footer .container { flex-direction: column; align-items: flex-start; }
-      th, td { padding: 0.6rem 0.5rem; font-size: 0.875rem; }
+      th, td { padding: 0.6rem 0.75rem; font-size: 0.875rem; }
     }
   </style>
 </head>
@@ -409,12 +289,14 @@
   <!-- NAV -->
   <nav>
     <div class="container">
-      <a href="#" class="nav-logo">MaidOwn</a>
+      <a href="#" class="nav-logo">
+        <img src="assets/maidown-horizontal.svg" alt="MaidOwn" height="28">
+      </a>
       <a href="#cta" class="nav-cta">Join the waitlist →</a>
     </div>
   </nav>
 
-  <!-- ── SECTION 1: HERO ── -->
+  <!-- HERO -->
   <section id="hero">
     <div class="container">
       <h1>The maid service software you buy once and own forever.</h1>
@@ -430,7 +312,7 @@
     </div>
   </section>
 
-  <!-- ── SECTION 2: THE MATH ── -->
+  <!-- THE MATH -->
   <section class="alt">
     <div class="container">
       <div class="section-label">The Math</div>
@@ -471,11 +353,11 @@
       <div class="math-callout">
         <p>MaidOwn pays for itself vs. ZenMaid in 6 months. After that, every year costs you nothing.</p>
       </div>
-      <p style="margin-top:1rem; font-size:0.875rem; color:var(--color-muted);">Personal license available at $197 for solo cleaners. Business Pro at $397 includes the full Pro Pack.</p>
+      <p style="margin-top:1rem; font-size:0.875rem; color:var(--neutral-text-secondary);">Personal license available at $197 for solo cleaners. Business Pro at $397 includes the full Pro Pack.</p>
     </div>
   </section>
 
-  <!-- ── SECTION 3: THREE FEATURES ── -->
+  <!-- FEATURES -->
   <section>
     <div class="container">
       <div class="section-label">Features</div>
@@ -500,7 +382,7 @@
     </div>
   </section>
 
-  <!-- ── SECTION 4: ACCESS FROM ANYWHERE ── -->
+  <!-- HOW IT WORKS -->
   <section id="access" class="alt">
     <div class="container">
       <div class="section-label">How It Works</div>
@@ -522,7 +404,7 @@
     </div>
   </section>
 
-  <!-- ── SECTION 5: INSTALLATION ── -->
+  <!-- SETUP -->
   <section>
     <div class="container">
       <div class="section-label">Setup</div>
@@ -552,7 +434,7 @@
     </div>
   </section>
 
-  <!-- ── SECTION 6: PRICING PREVIEW ── -->
+  <!-- PRICING PREVIEW -->
   <section class="alt">
     <div class="container">
       <div class="section-label">Pricing</div>
@@ -578,12 +460,12 @@
           <p class="pricing-detail">Unlimited cleaners + Pro Pack included</p>
         </div>
       </div>
-      <p style="margin-top:2rem; font-size:0.9375rem; color:var(--color-muted); line-height:1.7;">Not sure which tier? Most established cleaning businesses choose Business. It covers everything you need to run scheduling, invoicing, and reminders for any number of cleaners — no per-seat charges. Choose Business Pro if you operate in multiple cities, want to send invoices under your own brand, or need detailed reporting on cleaner and client performance.<br><br>You can upgrade at any time and only pay the difference. You'll never lose your data or have to reinstall.</p>
+      <p style="margin-top:2rem; font-size:0.9375rem; color:var(--neutral-text-secondary); line-height:1.7;">Not sure which tier? Most established cleaning businesses choose Business. It covers everything you need to run scheduling, invoicing, and reminders for any number of cleaners — no per-seat charges. Choose Business Pro if you operate in multiple cities, want to send invoices under your own brand, or need detailed reporting on cleaner and client performance.<br><br>You can upgrade at any time and only pay the difference. You'll never lose your data or have to reinstall.</p>
       <p class="pricing-note">Launching soon. Join the waitlist for 30% off your first license.</p>
     </div>
   </section>
 
-  <!-- ── SECTION 7: PRO PACK ── -->
+  <!-- PRO PACK -->
   <section id="pro-pack">
     <div class="container">
       <div class="section-label">The Pro Pack</div>
@@ -609,8 +491,8 @@
     </div>
   </section>
 
-  <!-- ── SECTION 8: CTA REPEAT ── -->
-  <section id="cta">
+  <!-- CTA -->
+  <section id="cta" class="alt">
     <div class="container">
       <h2>Ready to stop renting your software?</h2>
       <p class="subheadline">Join the waitlist and get 30% off when MaidOwn launches.</p>
@@ -645,7 +527,7 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <span>MaidOwn — scheduling and invoicing for maid service businesses.</span>
@@ -666,8 +548,7 @@
     var $mcj = jQuery.noConflict(true);
   </script>
   <script type="text/javascript">
-    // Replace Mailchimp's default success message with custom copy
-    var customMsg = "Thank you! You\u2019ve been added to the MaidOwn waitlist. We\u2019ll reach out when we launch with your 30% discount code.";
+    var customMsg = "Thank you! You’ve been added to the MaidOwn waitlist. We’ll reach out when we launch with your 30% discount code.";
     document.addEventListener('DOMContentLoaded', function() {
       var successDiv = document.getElementById('mce-success-response');
       if (!successDiv) return;
@@ -677,7 +558,6 @@
           successDiv.innerHTML = customMsg;
         }
       });
-      // Watch both text content changes (childList) and style toggling (attributes)
       observer.observe(successDiv, { attributes: true, childList: true, subtree: true });
     });
   </script>

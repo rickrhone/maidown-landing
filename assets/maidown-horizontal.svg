@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 256" width="960" height="256">
+  <title>MaidOwn horizontal lockup</title>
+  <desc>Mint rounded square mark followed by the MaidOwn wordmark.</desc>
+  <rect x="0" y="0" width="256" height="256" rx="64" ry="64" fill="#0EA381"/>
+  <text x="128" y="176"
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="132"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="-3">M</text>
+  <circle cx="212" cy="44" r="14" fill="#FFFFFF"/>
+  <text x="320" y="170"
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="128"
+        font-weight="400"
+        fill="#0F1A17"
+        letter-spacing="-3">Maid<tspan font-weight="700">Own</tspan></text>
+</svg>

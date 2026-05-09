@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Get-ChildItem \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\" -Recurse)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Format-List)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\")",
+      "Bash(Out-Null)",
+      "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\maidown-icon.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\maidown-icon.svg\")",
+      "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\maidown-horizontal.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\maidown-horizontal.svg\")",
+      "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\maidown-stacked.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\maidown-stacked.svg\")",
+      "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\favicon.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\favicon.svg\")",
+      "PowerShell(ls \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}})"
+    ]
+  }
+}

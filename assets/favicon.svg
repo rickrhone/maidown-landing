@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>MaidOwn</title>
+  <rect width="256" height="256" rx="56" ry="56" fill="#0EA381"/>
+  <text x="128" y="180"
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="148"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="-3">M</text>
+  <circle cx="212" cy="44" r="14" fill="#FFFFFF"/>
+</svg>
