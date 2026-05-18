@@ -13,7 +13,14 @@
       "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\maidown-horizontal.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\maidown-horizontal.svg\")",
       "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\maidown-stacked.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\maidown-stacked.svg\")",
       "Bash(Copy-Item \"G:\\\\My Drive\\\\SoftwareBusinesses\\\\MaidOwn\\\\designDocs\\\\favicon.svg\" \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\\\\favicon.svg\")",
-      "PowerShell(ls \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}})"
+      "PowerShell(ls \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "Skill(superpowers:writing-plans)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\" -Recurse -Filter \"*.css\")",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\\\\assets\" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\rickr\\\\BusinessRepositories\\\\maidown-landing\" -Recurse | Where-Object { $_.Extension -eq \".css\" } | ForEach-Object { $_.FullName })",
+      "Skill(superpowers:executing-plans)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
