@@ -89,6 +89,7 @@ nav .container {
   text-decoration: none;
 }
 .nav-link:hover { color: var(--neutral-text-primary); }
+.nav-links { display: flex; align-items: center; gap: 1.5rem; }
 
 /* ── TYPOGRAPHY ───────────────────────────────────────────────── */
 h1, h2, h3, h4 {
