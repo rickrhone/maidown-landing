@@ -66,6 +66,8 @@
 }
 .blog-post a { color: var(--mint-600); text-decoration: underline; }
 .blog-post a:hover { color: var(--mint-800); }
+.blog-post .btn { color: #fff; text-decoration: none; }
+.blog-post .btn:hover { color: #fff; }
 
 /* ── POST CTA BLOCK ─────────────────────────────────────────── */
 .post-cta {
